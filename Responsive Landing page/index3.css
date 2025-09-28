@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;   
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+
+}
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+#ldpg {
+	font-weight: 900;
+	font-size: 2.5em;
+	letter-spacing: 2px;
+}
+#headerpart {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+    #div2, #div3, #div4 { height: 400px; padding: 8px; }
+    #div3 { flex-direction: column; align-items: flex-start; }
+    #div3>h1 { font-size: 22px; padding-left: 0; text-align: center; width: 100%; }
+    .review-gallery { flex-direction: column; gap: 0.5rem; }
+    .img { width: 80px; height: 80px; }
+    footer { flex-direction: column; gap: 16px; padding: 12px 5px; font-size: 0.95em; height: auto; }
+}
+#div1 {
+    background-color: lightgrey;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#div2 {
+    background-color: lightblue;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 800px;
+    background-repeat: no-repeat;    
+    background-image: url(./Gemini_Generated_Image_5c9uon5c9uon5c9u.png);
+    background-size: cover;
+    background-position: center;
+}
+#div3 {
+    background-color: lightgrey;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 800px;
+    display: flex;
+}
+#div3>h1 {
+    flex: 1;
+    text-align: left;
+    padding-left: 50px;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #0d6efd;
+}
+#div4 {
+    background-color: lightblue;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+/* Review Gallery Animation */
+.review-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+.img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+    object-fit: cover;
+    filter: brightness(0.95) grayscale(20%);
+    cursor: pointer;
+}
+.img:hover {
+    transform: scale(5.19) ;
+    box-shadow: 0 8px 22px;
+    z-index: 2;
+    transition: all 1s ease;
+}
+footer{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 400px;
+    background-color:#cbb5b5;
+     padding:40px 20px;
+      font-family:sans-serif;
+      flex-wrap: wrap;
+      font-weight: 600;
+}
