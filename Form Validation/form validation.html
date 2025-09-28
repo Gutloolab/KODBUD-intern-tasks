@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;      
+            
+        }
+        h1{
+            text-align: center;
+            padding: 20px;
+
+
+                   
+        }
+      form{
+        width: 1080px;
+        height: 600px;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px grey;
+        background-color: rgb(243, 211, 211); 
+       align-content: center; 
+      }
+        input,select{
+            width: 280px;
+            height: 30px;
+            margin: 10px;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            margin-left: 500px;
+            border-radius: 5px;
+            background-color: rgb(12, 12, 96);
+            color: white;
+        }
+        label{
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        input[type="radio"]{
+            width: 20px;
+            height: 20px;
+            margin-left: 20px;
+        }
+        input[type="file"]{
+            border: 2px dashed grey;
+            text-align: center;
+            padding-left: 100px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        #img{
+            width: 150px;
+            height: 100px;
+            display: block;
+            margin: auto;
+            padding-top: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <img src="./A sleek, modern logo.png"  id="img">
+    <h1>JOB APPLICATION FORM</h1>
+    <form action="" method="post" frameborder="2" frameset="1">
+        <label for="fname"> Name</label>
+        <input type="text" id ="fname"  placeholder="firstname" required>
+        <input type="text" id="lname" placeholder="lastname" required> <br><br><br>
+        <label for="male">Email</label>
+        <input type="email" name="email" id="male" required>
+        <label for="phone" >phone</label>
+        <input type="number" name="mobile" id="phone" placeholder="############" required><br><br><br>
+        <label for="position">What position are you applaying for?</label>
+        <select name="" id="">
+            <option value="">IT</option>
+            <option value="">Sales and Marketing</option>
+            <option value="">Analyst</option>
+            <option value="">HR</option>
+        </select>
+        <label for="date">Start Date</label>
+        <input type="date" id="date"> <br><br><br>
+        <label for="position">What is your current employment status?</label>
+        <label for="">Employed</label>
+        <input type="radio" name="Employed" id="emp">
+         <label for="">SelfEmployed</label>
+        <input type="radio" name="selfEmployed" id="semp">
+         <label for="">UnEmployed</label>
+        <input type="radio" name="UnEmployed" id="uemp">
+         <label for="">Student</label>
+        <input type="radio" name="Student" id="stu"><br><br><br><br>
+        <label for="">Upload your Resume</label>
+        <input type="file" name="Resume" placeholder="choose files or drag here" width="300px" height=""><br><br>
+        <button>Submit</button>
+    </form>
+
+    <script>
+        let form=document.select("form");
+        form.addeventListener("submit",function(e){
+            e.preventDefault();
+        });
+        let fname=document.getElementById("fname");
+        let lname=document.getElementById("lname");
+        let email=document.getElemeentbyid("male");
+        let phone=document.getElementById("phone");
+        let date=document.getElementById("date");
+        let emp=document.getElementById("emp");
+        let semp=document.getElementById("semp");
+        let uemp=document.getElementById("uemp");
+        let stu=document.getElementById("stu");
+        if(fname.value==""){
+            alert("first name is required");
+             fname.addeventListener("click",function(){
+                fname.style.border="2ps solid red";
+            })
+            
+        }
+        if(lname.value==""){
+            alert("last name is required");
+             lname.addeventListener("click",function(){
+                lname.style.border="2ps solid red";
+            })
+            
+        }
+        if(email.value==""){
+            alert("email is required");
+            email.addeventListener("click",function(){
+                email.style.border="2ps solid red";
+            })
+            
+        }
+        if(phone.value==""){
+            alert("phone number is required");
+             phone.addeventListener("click",function(){
+                phone.style.border="2ps solid red";
+            })
+            
+        }
+        if(date.value==""){
+            alert("date is required");
+        }        
+
+
+
+
+    </script>
+</body>
+</html>
