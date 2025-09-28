@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    text-decoration: none;
+    gap: 90px;
+}
+
+#dv2>img{
+    width: 600px;
+    height: 290px;
+    position: relative;
+    left: 480px;
+}
+#div3{
+    border: 2px solid rgb(98,97,97);
+    width: 700px;
+    height: 50px;
+    border-radius: 20px;
+    position: relative;
+    left:440px;
+    bottom: 25px;
+    display: flex;
+    align-items: center;
+    display: flex;;
+}
+.button{
+    border:2px solid rgb(98,97,97);
+    height:40px;
+    width: 99px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    border-color: rgb(98, 97, 97);
+    position: relative;
+    left: 530px;
+    margin-right: 10px;
+}
+#i1,#i2{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 520px;
+}
+#div4{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: relative;   
+}
+#div5{
+    height: 200px;
+    position: relative;
+    top: 50px;
+    left: 500px;
+    
+}
+#div5>a{
+    color: royalblue;
+}
+#div6{
+    border: 2px solid black;
+height: 60px;
+border-color: rgb(250, 249, 249);
+background-color: rgb(250, 249, 249);
+}
